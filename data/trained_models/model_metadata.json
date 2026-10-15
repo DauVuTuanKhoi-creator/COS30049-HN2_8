@@ -1,0 +1,200 @@
+{
+  "random_state": 42,
+  "use_multilingual_augmentation": false,
+  "data_sources": [
+    {
+      "local_file": "mail_data.csv",
+      "task": "spam_classification",
+      "candidate_origin": "Possible UCI SMS Spam Collection match (unverified)",
+      "candidate_reference": "https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection",
+      "provenance_status": "unverified"
+    },
+    {
+      "local_file": "emails.csv",
+      "task": "spam_classification",
+      "candidate_origin": "Possible open email spam/ham corpus (unverified)",
+      "candidate_reference": "https://www.cs.cmu.edu/~enron/",
+      "provenance_status": "unverified"
+    },
+    {
+      "local_file": "data-augmented.csv",
+      "task": "spam_classification_multilingual",
+      "candidate_origin": "Possible derivative/augmentation of an open spam corpus (unverified)",
+      "candidate_reference": "https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection",
+      "provenance_status": "unverified"
+    },
+    {
+      "local_file": "Malware dataset.csv",
+      "task": "malware_classification",
+      "candidate_origin": "Origin not established by repository evidence",
+      "candidate_reference": null,
+      "provenance_status": "unverified"
+    }
+  ],
+  "method_types_used": [
+    "classification",
+    "clustering"
+  ],
+  "spam": {
+    "rows": 10766,
+    "sources": {
+      "emails.csv": 5532,
+      "mail_data.csv": 5186,
+      "data-augmented.csv:text": 48
+    },
+    "selected_model": "logistic_regression_char_tfidf",
+    "validation_model_comparison": [
+      {
+        "model": "logistic_regression_char_tfidf",
+        "accuracy": 0.9809568044588945,
+        "spam_precision": 0.937799043062201,
+        "spam_recall": 0.9631449631449631,
+        "spam_f1": 0.9503030303030303,
+        "roc_auc": 0.9956699905153513
+      },
+      {
+        "model": "logistic_regression_word_tfidf",
+        "accuracy": 0.9749187180678124,
+        "spam_precision": 0.9253012048192771,
+        "spam_recall": 0.9434889434889435,
+        "spam_f1": 0.9343065693430657,
+        "roc_auc": 0.9948622474395671
+      },
+      {
+        "model": "multinomial_naive_bayes_word_tfidf",
+        "accuracy": 0.9577333952624245,
+        "spam_precision": 0.9906832298136646,
+        "spam_recall": 0.7837837837837838,
+        "spam_f1": 0.8751714677640604,
+        "roc_auc": 0.9891165767454427
+      }
+    ],
+    "final_test_metrics": {
+      "accuracy": 0.9846796657381616,
+      "spam_precision": 0.9584352078239609,
+      "spam_recall": 0.9607843137254902,
+      "spam_f1": 0.9596083231334149,
+      "roc_auc": 0.9971363115693013
+    }
+  },
+  "malware": {
+    "rows": 100000,
+    "features": [
+      "millisecond",
+      "state",
+      "usage_counter",
+      "prio",
+      "static_prio",
+      "normal_prio",
+      "policy",
+      "vm_pgoff",
+      "vm_truncate_count",
+      "task_size",
+      "cached_hole_size",
+      "free_area_cache",
+      "mm_users",
+      "map_count",
+      "hiwater_rss",
+      "total_vm",
+      "shared_vm",
+      "exec_vm",
+      "reserved_vm",
+      "nr_ptes",
+      "end_data",
+      "last_interval",
+      "nvcsw",
+      "nivcsw",
+      "min_flt",
+      "maj_flt",
+      "fs_excl_counter",
+      "lock",
+      "utime",
+      "stime",
+      "gtime",
+      "cgtime",
+      "signal_nvcsw"
+    ],
+    "selected_model": "random_forest",
+    "validation_model_comparison": [
+      {
+        "model": "random_forest",
+        "accuracy": 1.0,
+        "malware_precision": 1.0,
+        "malware_recall": 1.0,
+        "malware_f1": 1.0,
+        "roc_auc": 1.0
+      },
+      {
+        "model": "decision_tree_baseline",
+        "accuracy": 0.99985,
+        "malware_precision": 1.0,
+        "malware_recall": 0.9997,
+        "malware_f1": 0.9998499774966245,
+        "roc_auc": 0.99985
+      }
+    ],
+    "final_test_metrics": {
+      "accuracy": 1.0,
+      "roc_auc": 1.0
+    },
+    "clustering_metrics": {
+      "silhouette_score": 0.3063985345430847,
+      "silhouette_sample_size": 10000,
+      "adjusted_rand_index_vs_true": 0.004955278294482978,
+      "normalized_mutual_info_vs_true": 0.003910742011749823
+    }
+  },
+  "data_quality": {
+    "spam": {
+      "source_quality": [
+        {
+          "source": "mail_data.csv",
+          "raw_rows": 5613,
+          "usable_rows": 5613,
+          "rows_not_used": 0,
+          "missing_text": 0,
+          "blank_text": 0,
+          "unrecognized_or_missing_labels": 0,
+          "ham_rows": 4845,
+          "spam_rows": 768
+        },
+        {
+          "source": "emails.csv",
+          "raw_rows": 5728,
+          "usable_rows": 5728,
+          "rows_not_used": 0,
+          "missing_text": 0,
+          "blank_text": 0,
+          "unrecognized_or_missing_labels": 0,
+          "ham_rows": 4360,
+          "spam_rows": 1368
+        },
+        {
+          "source": "data-augmented.csv",
+          "raw_rows": 5572,
+          "usable_rows": 5572,
+          "rows_not_used": 0,
+          "missing_text": 0,
+          "blank_text": 0,
+          "unrecognized_or_missing_labels": 0,
+          "ham_rows": 4825,
+          "spam_rows": 747
+        }
+      ],
+      "usable_records_before_integration": 16913,
+      "conflicting_text_groups": 0,
+      "conflicting_records_excluded": 0,
+      "exact_duplicate_rows_removed_after_conflict_exclusion": 5982,
+      "normalized_duplicate_rows_removed_after_conflict_exclusion": 6147,
+      "training_rows_after_cleaning": 10766
+    },
+    "malware": {
+      "unusable_label_rows_excluded": 0,
+      "usable_rows": 100000,
+      "numeric_feature_count": 33,
+      "missing_numeric_feature_cells": 0,
+      "exact_duplicate_feature_label_rows_reported": 0,
+      "non_numeric_columns_excluded": []
+    }
+  }
+}

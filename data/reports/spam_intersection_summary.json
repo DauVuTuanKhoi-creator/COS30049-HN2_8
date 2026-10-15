@@ -1,0 +1,148 @@
+{
+  "source_meta": [
+    {
+      "source": "emails",
+      "file": "emails.csv",
+      "encoding": "utf-8",
+      "rows_loaded": 5728,
+      "rows_used": 5728,
+      "empty_text_dropped": 0,
+      "unknown_label_dropped": 0,
+      "spam_rate": 0.2388268156424581,
+      "exact_duplicate_rows": 196,
+      "unique_messages": 5532
+    },
+    {
+      "source": "mail_data",
+      "file": "mail_data.csv",
+      "encoding": "utf-8",
+      "rows_loaded": 5613,
+      "rows_used": 5613,
+      "empty_text_dropped": 0,
+      "unknown_label_dropped": 0,
+      "spam_rate": 0.136825227151256,
+      "exact_duplicate_rows": 427,
+      "unique_messages": 5186
+    },
+    {
+      "source": "mail_dataset",
+      "file": "mail_dataset.csv",
+      "encoding": "utf-8",
+      "rows_loaded": 6018,
+      "rows_used": 6018,
+      "empty_text_dropped": 0,
+      "unknown_label_dropped": 0,
+      "spam_rate": 0.5036556995679627,
+      "exact_duplicate_rows": 5960,
+      "unique_messages": 58
+    },
+    {
+      "source": "spam",
+      "file": "spam.csv",
+      "encoding": "latin-1",
+      "rows_loaded": 5572,
+      "rows_used": 5572,
+      "empty_text_dropped": 0,
+      "unknown_label_dropped": 0,
+      "spam_rate": 0.13406317300789664,
+      "exact_duplicate_rows": 415,
+      "unique_messages": 5157
+    }
+  ],
+  "pairwise_overlap": [
+    {
+      "left": "emails",
+      "right": "mail_data",
+      "overlap_count": 0,
+      "left_overlap_pct": 0.0,
+      "right_overlap_pct": 0.0,
+      "jaccard": 0.0
+    },
+    {
+      "left": "emails",
+      "right": "mail_dataset",
+      "overlap_count": 0,
+      "left_overlap_pct": 0.0,
+      "right_overlap_pct": 0.0,
+      "jaccard": 0.0
+    },
+    {
+      "left": "emails",
+      "right": "spam",
+      "overlap_count": 0,
+      "left_overlap_pct": 0.0,
+      "right_overlap_pct": 0.0,
+      "jaccard": 0.0
+    },
+    {
+      "left": "mail_data",
+      "right": "mail_dataset",
+      "overlap_count": 0,
+      "left_overlap_pct": 0.0,
+      "right_overlap_pct": 0.0,
+      "jaccard": 0.0
+    },
+    {
+      "left": "mail_data",
+      "right": "spam",
+      "overlap_count": 4557,
+      "left_overlap_pct": 0.8787119166988044,
+      "right_overlap_pct": 0.883653286794648,
+      "jaccard": 0.7875907362599378
+    },
+    {
+      "left": "mail_dataset",
+      "right": "spam",
+      "overlap_count": 0,
+      "left_overlap_pct": 0.0,
+      "right_overlap_pct": 0.0,
+      "jaccard": 0.0
+    }
+  ],
+  "contradiction_summary": {
+    "unique_messages": 11376,
+    "contradiction_messages": 0,
+    "contradiction_rate": 0.0
+  },
+  "domain_profile": {
+    "emails": {
+      "rows": 5728.0,
+      "spam_rate": 0.2388268156424581,
+      "mean_chars": 1556.7686801675977,
+      "p95_chars": 4554.499999999996,
+      "url_presence_rate": 0.0,
+      "uppercase_ratio_mean": 0.001679534124504305,
+      "digit_ratio_mean": 0.02464546297436415
+    },
+    "mail_data": {
+      "rows": 5613.0,
+      "spam_rate": 0.136825227151256,
+      "mean_chars": 80.29538571174061,
+      "p95_chars": 160.0,
+      "url_presence_rate": 0.021200783894530555,
+      "uppercase_ratio_mean": 0.06581278774672834,
+      "digit_ratio_mean": 0.019252357340275927
+    },
+    "mail_dataset": {
+      "rows": 6018.0,
+      "spam_rate": 0.5036556995679627,
+      "mean_chars": 36.275340644732466,
+      "p95_chars": 60.0,
+      "url_presence_rate": 0.00033233632436025255,
+      "uppercase_ratio_mean": 0.05077931519283166,
+      "digit_ratio_mean": 0.02936098986520092
+    },
+    "spam": {
+      "rows": 5572.0,
+      "spam_rate": 0.13406317300789664,
+      "mean_chars": 80.11880832735105,
+      "p95_chars": 161.0,
+      "url_presence_rate": 0.019023689877961235,
+      "uppercase_ratio_mean": 0.06637449801653443,
+      "digit_ratio_mean": 0.01916136116205103
+    }
+  },
+  "outputs": {
+    "contradictions_csv": "D:\\code\\C30049\\group-project-spr-2026-grp2_7\\data\\reports\\spam_label_contradictions.csv"
+  }
+}

